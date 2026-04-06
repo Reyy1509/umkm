@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio - Satrio Dheca Reyvalldo | Industrial Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af', // Biru gelap (sesuai industri & profesional)
+            secondary: '#3b82f6', // Biru cerah
+            accent: '#10b981', // Hijau (efisiensi, pertumbuhan)
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+  <!-- Header & Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#home" class="text-xl font-bold text-primary">Satrio Dheca Reyvalldo</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-primary transition">Tentang</a>
+        <a href="#projects" class="hover:text-primary transition">Proyek</a>
+        <a href="#skills" class="hover:text-primary transition">Keahlian</a>
+        <a href="#contact" class="hover:text-primary transition">Kontak</a>
+      </nav>
+      <button class="md:hidden text-gray-600">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <!-- Foto Profil -->
+      <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
+        <div class="text-gray-500">
+          <img 
+        src="X RPL 3_30_Satrio Dheca Reyvalldo.jpg" 
+        alt="Foto Profil" 
+        class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-lg"
+      >
+         
+        </div>
+      </div>
+      <!-- Teks Hero -->
+      <div class="md:w-2/3 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Halo, Saya <span class="text-primary">Satrio Dheca Reyvalldo</span>
+        </h1>
+        <h2 class="text-xl md:text-2xl text-primary font-semibold mb-4">
+          Industrial Engineer | Optimasi Sistem & Analisis Data
+        </h2>
+        <p class="text-gray-600 mb-6 max-w-2xl">
+          Saya membantu organisasi meningkatkan efisiensi, mengurangi limbah, dan mengoptimalkan proses melalui pendekatan teknik industri yang berbasis data.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#projects" class="bg-primary hover:bg-blue-800 text-white font-medium py-2 px-6 rounded-lg transition w-full sm:w-auto text-center">
+            Lihat Proyek
+          </a>
+          <a href="#contact" class="border border-primary text-primary hover:bg-blue-50 font-medium py-2 px-6 rounded-lg transition w-full sm:w-auto text-center">
+            Hubungi Saya
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Tentang Saya</h2>
+      <div class="max-w-4xl mx-auto text-center md:text-left">
+        <p class="text-gray-600 mb-4">
+          Saya adalah lulusan Teknik Industri dari Institut Teknologi Bandung, dengan fokus pada <strong>lean manufacturing</strong>, <strong>analisis sistem</strong>, dan <strong>pengambilan keputusan berbasis data</strong>.
+        </p>
+        <p class="text-gray-600 mb-4">
+          Selama studi dan magang, saya telah terlibat dalam proyek peningkatan produktivitas, pengukuran waktu kerja (time study), perancangan tata letak pabrik, hingga pengembangan dashboard KPI menggunakan Excel, Power BI, dan Python.
+        </p>
+        <p class="text-gray-600">
+          Saya percaya bahwa setiap sistem bisa lebih baik — lebih cepat, lebih hemat, dan lebih manusiawi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keahlian -->
+  <section id="skills" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Keahlian</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+          <i class="fas fa-chart-line text-3xl text-accent mb-3"></i>
+          <h3 class="font-semibold">Analisis Data</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+          <i class="fas fa-industry text-3xl text-accent mb-3"></i>
+          <h3 class="font-semibold">Lean Manufacturing</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+          <i class="fas fa-project-diagram text-3xl text-accent mb-3"></i>
+          <h3 class="font-semibold">Perancangan Sistem</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+          <i class="fas fa-chart-pie text-3xl text-accent mb-3"></i>
+          <h3 class="font-semibold">KPI & Dashboard</h3>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="mt-12 text-center">
+        <h3 class="text-xl font-semibold mb-4">Tools & Software</h3>
+        <div class="flex flex-wrap justify-center gap-3 text-gray-700">
+          <span class="bg-white px-4 py-2 rounded-lg shadow-sm">Excel</span>
+          <span class="bg-white px-4 py-2 rounded-lg shadow-sm">Power BI</span>
+          <span class="bg-white px-4 py-2 rounded-lg shadow-sm">Python</span>
+          <span class="bg-white px-4 py-2 rounded-lg shadow-sm">AutoCAD</span>
+          <span class="bg-white px-4 py-2 rounded-lg shadow-sm">Arena Simulation</span>
+          <span class="bg-white px-4 py-2 rounded-lg shadow-sm">Minitab</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyek -->
+  <section id="projects" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Proyek Unggulan</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Proyek 1 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+          <h3 class="font-bold text-lg mb-2 text-primary">Optimasi Lini Produksi</h3>
+          <p class="text-gray-600 text-sm mb-3">
+            Mengurangi cycle time sebesar 18% melalui time study dan rebalancing lini produksi di pabrik elektronik.
+          </p>
+          <span class="inline-block bg-blue-100 text-primary text-xs px-3 py-1 rounded-full">Lean</span>
+          <span class="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full ml-2">Time Study</span>
+        </div>
+        <!-- Proyek 2 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+          <h3 class="font-bold text-lg mb-2 text-primary">Perancangan Tata Letak Gudang</h3>
+          <p class="text-gray-600 text-sm mb-3">
+            Merancang ulang tata letak gudang untuk meminimalkan jarak tempuh operator dan meningkatkan throughput.
+          </p>
+          <span class="inline-block bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Facility Layout</span>
+        </div>
+        <!-- Proyek 3 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+          <h3 class="font-bold text-lg mb-2 text-primary">Dashboard KPI Produksi</h3>
+          <p class="text-gray-600 text-sm mb-3">
+            Membuat dashboard real-time untuk memantau OEE, downtime, dan output menggunakan Power BI.
+          </p>
+          <span class="inline-block bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Power BI</span>
+          <span class="inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full ml-2">Data Visualization</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Mari Berkolaborasi!</h2>
+      <p class="max-w-2xl mx-auto mb-8 opacity-90">
+        Tertarik untuk bekerja sama atau ingin tahu lebih lanjut? Kirimi saya pesan!
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="mailto:satriodheca@gmail.com"
+           class="bg-white text-primary font-medium py-2 px-6 rounded-lg hover:bg-gray-100 transition w-full sm:w-auto">
+          <i class="fas fa-envelope mr-2"></i>Email Saya
+        </a>
+        <a href="https://linkedin.com/in/satriodheca"
+           target="_blank"
+           class="bg-transparent border-2 border-white text-white font-medium py-2 px-6 rounded-lg hover:bg-white/10 transition w-full sm:w-auto">
+          <i class="fab fa-linkedin mr-2"></i>LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2026 [Nama Anda]. Industrial Engineer.</p>
+      <p class="text-gray-400 mt-2">Membangun sistem yang efisien, berkelanjutan, dan berorientasi manusia.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
